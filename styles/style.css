@@ -1,0 +1,91 @@
+/* fonsts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* default css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* header section starts */
+
+.header {
+    background: #2D25A0;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 20px;
+    display: inline-block;
+}
+
+.header .btn {
+    text-decoration: none;
+    background: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 16px;
+}
+.header .btn i {
+    margin-right: 10px;
+}
+
+/* banner section starts */
+
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8%;
+}
+
+.banner-left h1 {
+    color: white;
+    font-size: 64px;
+    line-height: 1.3em;
+}
+.banner-left {
+    margin-right: 2%;
+}
+
+.banner-left a {
+    color: white;
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 10px 25px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.banner-left i {
+    margin-left: 10px;
+}
+
+.banner-right {
+    margin-top: 35px;
+}
+
+.banner-right img {
+    width: 556px;
+    height: 456px;
+}
