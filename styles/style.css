@@ -23,6 +23,7 @@ img {
 
 .header {
     background: #2D25A0;
+    min-height: 650px;
 }
 
 /* navbar */
@@ -61,16 +62,17 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 8%;
+    margin: 0 10%;
 }
 
 .banner-left h1 {
     color: white;
     font-size: 64px;
-    line-height: 1.3em;
+    line-height: 80px;
+    font-weight: 700;
 }
 .banner-left {
-    margin-right: 2%;
+    margin-right: 8%;
 }
 
 .common-btn {
@@ -78,7 +80,7 @@ nav ul li a {
     text-decoration: none;
     background: #E02C6D;
     padding: 10px 25px;
-    margin-top: 30px;
+    margin-top: 27px;
     display: inline-block;
 }
 .common-btn i {
@@ -107,12 +109,64 @@ nav ul li a {
     padding: 15px;
 }
 .player-info h3 {
-    font-size: 25px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
     margin: 10px 0;
+}
+.player-info p {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .player img {
     width: 100%;
+}
+
+/* first extra section starts */
+
+.psg {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.psg-info{
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 30%);
+    padding: 15px;
+}
+.psg-info h3 {
+    font-size: 22px;
+}
+
+.psg-info span {
+    margin-top: 10px;
+    display: inline-block;
+    color: red;
+}
+
+
+/* second section starts */
+
+.euro-final {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 30px;
+}
+article.team-info {
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-info img {
+    width: 100px;
+}
+
+.team-info p {
+    margin-top: 25px;
 }
 
 /* hightlight section starts */
@@ -133,8 +187,9 @@ nav ul li a {
 }
 
 .hightlight-content h2 {
-    font-size: 52px;
-    line-height: 1.3em;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 .hightlight-content p {
@@ -155,8 +210,7 @@ nav ul li a {
 }
 
  footer img {
-    width: 227px;
-    height: 67px;
+    width: 489px;
 }
 .social-icons {
     margin: 20px 0;
@@ -168,8 +222,86 @@ nav ul li a {
 .social-icons i {
     font-size: 20px;
     background: lightgray;
-    padding: 20px;
+    padding: 12px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* banner section */
+    .banner-section {
+        display: flex;
+        margin: 0 10%;
+        flex-direction: column;
+    }
+
+    .banner-left h1 {
+        color: white;
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 110px;
+    }
+    .banner-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* extra section */
+
+    .players, .psg, .euro-final {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    /* hightlight content */
+
+    .hightlight {
+        display: flex;
+        margin: 100px 20px;
+        flex-direction: column;
+    }
+    .hightlight-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hightlight-photo {
+        margin-top: 30px;
+    }
+    .hightlight-photo img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* footer section */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 68px 0 100px;
+    }
+    footer img {
+        width: 270px;
+    }
 }
