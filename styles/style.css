@@ -11,8 +11,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .container {
-    width: 1200px;
-    margin: 40px auto;
+    width: 1100px;
+    margin: 20px auto;
 }
 img {
     width: 100%;
@@ -96,6 +96,11 @@ nav ul li a {
     height: 456px;
 }
 
+/* .banner-right img {
+    width: 100%;
+    height: auto;
+} */
+
 /* player section starts */
 
 .players {
@@ -125,6 +130,10 @@ nav ul li a {
 
 /* first extra section starts */
 
+.psg-special {
+    padding: 30px 0;
+}
+
 .psg {
     display: grid;
     grid-template-columns: 2fr repeat(2, 1fr);
@@ -147,6 +156,10 @@ nav ul li a {
 
 
 /* second section starts */
+
+.euro-special {
+    padding: 30px 0;
+}
 
 .euro-final {
     display: grid;
@@ -173,7 +186,7 @@ article.team-info {
 
 .hightlight {
     display: flex;
-    margin: 100px auto;
+    margin: 20px auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -234,7 +247,72 @@ footer p {
 }
 
 
+/* @media (max-width: 1200px) {
+    .banner-right img {
+        width: 456px;
+        height: 356px;
+    }
+}
 
+@media (max-width: 1024px) {
+    .banner-right img {
+        width: 376px;
+        height: 266px;
+    }
+} */
+
+
+/* @media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+} */
+
+
+
+
+@media (max-width: 1082px) {
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10%;
+    }
+    .container {
+        width: 100%;
+    }
+    .header {
+        min-height: 500px;
+    }
+    .banner-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-left h1 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .players, .psg, .euro-final {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px;
+    }
+
+    .hightlight {
+        flex-direction: column;
+    }
+
+    .hightlight-content {
+        margin: 40px 10%;
+    }
+    .hightlight-content h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
 
 
 
@@ -242,66 +320,67 @@ footer p {
     .container {
         width: 100%;
     }
+    .header {
+        min-height: 500px;
+    }
 
     nav {
         display: none;
     }
-
-    /* banner section */
     .banner-section {
-        display: flex;
-        margin: 0 10%;
         flex-direction: column;
     }
-
+    .banner-left {
+        margin-top: 50px;
+    }
     .banner-left h1 {
-        color: white;
         font-size: 36px;
         line-height: 50px;
-        margin-top: 110px;
+    }
+    .banner-left {
+        margin-right: 0;
     }
     .banner-right img {
-        width: 100%;
-        height: auto;
+        width: 330px;
+        height: 260px;
     }
-
-    /* extra section */
+    /* player section */
 
     .players, .psg, .euro-final {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+        padding: 25px;
+    }
+    .player {
+        padding: 20px;
+    }
+    .psg-info {
+        padding: 20px;
+    }
+    .team-info {
+        padding: 25px;
     }
 
-    /* hightlight content */
-
+    /* hightlight section */
+    
     .hightlight {
-        display: flex;
-        margin: 100px 20px;
         flex-direction: column;
+    }
+
+    .hightlight-content {
+        margin: 20px 5%;
     }
     .hightlight-content h2 {
         font-size: 30px;
         line-height: 40px;
-        margin-bottom: 20px;
-    }
-
-    .hightlight-photo {
-        margin-top: 30px;
     }
     .hightlight-photo img {
-        width: 90%;
-        height: auto;
+        width: 328px;
+        height: 248px;
     }
 
-    /* footer section */
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 68px 0 100px;
-    }
     footer img {
-        width: 270px;
+        width: 275px;
     }
+    
 }
+
